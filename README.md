@@ -6,4 +6,4 @@
 1. `dotnet run` - tests are executed successfully.
 1. `dotnet publish --configuration Release`
 1. `cd bin/Release/net10.0/publish`
-1. `dotnet run` - runtime exception.
+1. `dotnet TestProject1.dll` - runtime exception.
