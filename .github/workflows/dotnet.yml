@@ -22,7 +22,9 @@ jobs:
     - name: Build
       run: dotnet build --no-restore
     - name: Test
-      run: dotnet run
+      run: |
+        cd TestProject1
+        dotnet run
     - name: Publish
       run: dotnet publish --no-build --configuration Release -bl
     - name: Upload build log
@@ -32,6 +34,6 @@ jobs:
         path: "**/*.binlog"
     - name: Run published
       run: |
-        cd bin/Release/net*/publish
+        cd TestProject1/bin/Release/net*/publish
         dotnet TestProject1.dll
       continue-on-error: true
