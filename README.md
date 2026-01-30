@@ -1,0 +1,1 @@
+# MSTest-4.0.2-Microsoft.CodeCoverage.Core-conflict
