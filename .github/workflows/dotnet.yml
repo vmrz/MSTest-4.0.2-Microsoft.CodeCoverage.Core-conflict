@@ -24,7 +24,7 @@ jobs:
     - name: Publish
       run: |
         cd TestProject1
-        dotnet publish --no-build --configuration Release -bl
+        dotnet publish --configuration Release -bl
     - name: Upload build log
       uses: actions/upload-artifact@v4
       with:
